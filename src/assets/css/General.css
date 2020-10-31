@@ -1,0 +1,116 @@
+.modal{
+    position: fixed;
+    z-index: 7;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    transition: .7s;
+    left: 0;
+}
+
+.modal__fire{
+    position: fixed;
+    z-index: 7;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    transition: .7s;
+    left: 0;
+}
+.modal .modal__dialog{
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    animation-name: popUP;
+    animation-duration: .3s;
+}
+
+.modal__fire .modal__dialog{
+    background: #fff;
+    width: 85%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    animation-name: popUPFire;
+    animation-duration: .5s;
+}
+@keyframes popUP{
+    0%{
+        transform: translateY(200%);
+        
+    }
+    100%{
+        transform: translateY(0);
+        
+    }
+}
+@keyframes popUPFire{
+    0%{
+        left: 50%;
+        transform: translateY(-200%);
+        /* transform: translateX(-50%); */
+    }
+    100%{
+        transform: translateY(5%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.modal .modal__header{
+    border-bottom: .1px dashed var(--gray4);
+    padding: 20px 0;
+}
+.modal__fire .modal__header{
+    border-bottom: .1px dashed var(--gray4);
+    padding: 20px;
+}
+.modal .modal__header h4{
+    font-size: 20px;
+    font-family: DMRegular;
+    
+}
+.modal__fire .modal__header h4{
+    font-size: 20px;
+    font-family: SemiBold;
+    color: #333;
+}
+.modal .modal__body{
+    font-family: DMRegular;
+    border-bottom: .1px dashed var(--gray4);
+    padding: 20px 0;
+}
+.modal__fire .modal__body{
+    font-family: DMRegular;
+    border-bottom: .1px dashed var(--gray4);
+    padding: 20px;
+}
+.modal .modal__footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    padding-bottom: 0px;
+}
+.modal__fire .modal__footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    /* padding-bottom: 0px; */
+}
+.modal__footer .btn-success{
+    margin-left: 10px;
+}
+
+.modal__fire input{
+    width: 100%;
+    font-family: DMRegular;
+    border-radius: 5px;
+    border: 1px solid var(--gray4);
+    padding: 7px 20px;
+    margin-top: 20px;
+}

@@ -1,0 +1,127 @@
+/*starting root point*/
+:root{
+  --gray1: #333;
+  --gray2: #828282;
+  --gray3: #aeaeae;
+  --gray4: #bdbdbd;
+  --bGreen: #6AB976;
+  --red: #EB5757;
+}
+
+/*font style*/
+@font-face{
+  src: url('assets/fonts/AmsiPro-Black.ttf');
+  font-family: Black;
+}
+@font-face{
+  src: url('assets/fonts/AmsiPro-Bold.ttf');
+  font-family: Bold;
+}
+@font-face{
+  src: url('assets/fonts/AmsiPro-SemiBold.ttf');
+  font-family: SemiBold;
+}
+@font-face{
+  src: url('assets/fonts/AmsiPro-Light.ttf');
+  font-family: Light;
+}
+@font-face{
+  src: url('assets/fonts/AmsiPro-Regular.ttf');
+  font-family: Regular;
+}
+@font-face{
+  src: url('assets/fonts/AmsiPro-Ultra.ttf');
+  font-family: Ultra;
+}
+@font-face{
+  src: url('assets/fonts/AmsiPro-XLight.ttf');
+  font-family: XLight;
+}
+@font-face{
+  src: url('assets/fonts/DMSans-Regular.ttf');
+  font-family: DMRegular;
+}
+
+.gray1{ color: var(--gray1);}.gray2{ color: var(--gray2);}.gray3{ color: var(--gray3);}.gray4{ color: var(--gray4);}.green{ color: var(--bGreen);}
+
+.bg_gray1{ background: var(--gray1);}
+.bg_gray2{ background: var(--gray2);}
+.bg_gray3{ background: var(--gray3);}
+.bg_gray4{ background: var(--gray4);}
+.bg_green{ background: var(--bGreen);}
+
+body,html{
+  min-height: 100%;
+}
+body{
+  font-family: Regular;
+  background-color: #f7f7f7;
+}
+
+/* .container{
+  width: 576px;
+  background: #fff;
+} */
+/* @media(max-width: 576px){
+  .container{
+    width: 100%;
+    background: #fff;
+  }
+} */
+.container{
+  margin: 0 auto;
+  background: #fff;
+  max-width: 576px;
+  /* max-width: 768px; */
+  min-height: 100vh;
+  /* overflow-y: auto;
+  position: relative; */
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+
+/* @media (min-width: 576px){
+  .container{
+    width: 576px;
+  }
+} */
+button, input{
+  outline: none;
+}
+button{
+  cursor: pointer;
+}
+
+.btn-success{
+  background: var(--bGreen);
+  padding:7px 16px;
+  color: #fff;
+  font-family: DMRegular;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  filter: drop-shadow(0px 4px 16px rgba(11, 120, 163, 0.3));
+}
+.btn-danger{
+  background: var(--red);
+  padding: 7px 16px;
+  font-family: DMRegular;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  box-shadow: 0px 4px 16px rgba(235, 87, 87, 0.2);
+}   
+.link{
+  text-decoration: none;
+  display: inline-block;
+}
+.go_back{
+  position: absolute;
+  left: 7.5%;
+  top: 7vh;
+  background: transparent;
+  outline: none;
+  border: none;
+}

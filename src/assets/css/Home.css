@@ -1,0 +1,136 @@
+.home{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+}
+.home__dialog{
+    width: 85%;
+    margin: 0 auto;
+}
+.home__poke_img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+}
+@media (min-width: 576px){
+    .home__poke_img{
+        width: 200px;
+    }
+}
+.home__header{
+    margin-top: 140px;
+}
+.home__header h1{
+    font-family: Black;
+    font-size: 40px;
+    line-height: 37px;
+    color: var(--gray1);
+
+}
+.home__search {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.home__search input{
+    background: #FFFFFF;
+    box-shadow: 0px 12px 20px rgba(60, 86, 97, 0.1);
+    border-radius: 10px;
+    border: none;
+    padding: 18px;
+    flex: 1;
+    font-size: 16px;
+    font-family: DMRegular;
+}
+.home__search input::placeholder{
+    font-family: DMRegular;
+    /* letter-spacing: 1px; */
+    color: var(--gray4);
+    font-weight: 400;
+}
+.home__search button{
+    border-radius: 10px;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+    border: none;
+    padding: 0 18px;
+    margin-left: 20px;
+    filter: drop-shadow(0px 7px 13px rgba(11, 120, 163, 0.3));
+}
+.home__search button img{
+    height: 24px;
+}
+
+
+
+/* .link{
+    background: red;
+    display: block;
+} */
+.home__linkwrap{
+    display: flex;
+    margin-top: 40px;
+    justify-content: flex-end;
+}
+.home__linkwrap .link{
+    font-family: DMRegular;
+    color: var(--bGreen);
+}
+
+/*start home card*/
+.home__card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.home__card .link{
+    width: 47%;
+    display: inline-block;
+    text-decoration: none;
+}
+.home__card div{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: #FFFFFF;
+   box-shadow: 0px 23px 40px rgba(19, 47, 58, 0.08);
+   border-radius: 30px;
+   margin-bottom: 90px;
+   padding: 30px;
+   position: relative;
+}
+.home__card div img{
+    height: 180px;
+    margin-top: -90px;
+}
+.home__card div h2{
+    font-size: 18px;
+    font-family: Bold;
+    color: var(--gray1);
+    text-align: center;
+}
+.home__card div p{
+    font-family: DMRegular;
+    margin-top: 7px;
+    text-align: center;
+    font-size: 13px;
+}
+.home__card div .catch_poke{
+    position: absolute;
+    padding: 5px 17px;
+    font-family: Bold;
+    font-size: 13px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 400px;
+    bottom: 0;
+    background: var(--red);
+    color: var(--red);
+    transform: translateY(50%);
+    box-shadow: 0px 4px 16px rgba(235, 87, 87, 0.2);
+    background: rgba(235, 87, 87, 0.3);
+}
